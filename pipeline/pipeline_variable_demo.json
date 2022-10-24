@@ -1,0 +1,38 @@
+{
+	"name": "pipeline_variable_demo",
+	"properties": {
+		"activities": [
+			{
+				"name": "filename",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "filename",
+					"value": {
+						"value": "@concat(pipeline().parameters.trig_filename,string(utcnow()))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"trig_filename": {
+				"type": "string",
+				"defaultValue": "xyz"
+			}
+		},
+		"variables": {
+			"filename": {
+				"type": "String",
+				"defaultValue": "abcd"
+			}
+		},
+		"folder": {
+			"name": "demo"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-10-22T06:26:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

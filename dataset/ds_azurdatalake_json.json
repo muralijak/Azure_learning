@@ -1,0 +1,20 @@
+{
+	"name": "ds_azurdatalake_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_adfdemodl1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employees_API.json",
+				"fileSystem": "output"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

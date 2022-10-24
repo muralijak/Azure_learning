@@ -1,0 +1,23 @@
+{
+	"name": "ds_adfdl_modifiled_within_1day",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_adfdemodl1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "modifiled_within_1day",
+				"fileSystem": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "pl_validation_demo",
+	"properties": {
+		"activities": [
+			{
+				"name": "Validation1",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_azureStorage_validation",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.00:00:05",
+					"sleep": 10,
+					"childItems": true
+				}
+			}
+		],
+		"folder": {
+			"name": "demo"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-10-22T08:20:48Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

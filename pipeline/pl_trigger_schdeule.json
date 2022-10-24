@@ -1,0 +1,22 @@
+{
+	"name": "pl_trigger_schdeule",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"folder": {
+			"name": "demo"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-10-23T04:47:51Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
